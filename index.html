@@ -3,29 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Responsive Web Gallery</title>
 </head>
 <body>
     <header class="heading">
-       <h1 class="main-heading">Responsive Web Gallery</h1> 
+       <h1 class="main-heading"><i class="fa-light fa-images"></i>Responsive Web Gallery</h1> 
     </header>
-    <main class="container" >
-        
-            <img src="gallery/car1.jpg" alt="ford car">
-            <img src="gallery/car2.jpg" alt="ford car">
-            <img src="gallery/car3.jpg" alt="ford car">
-            <img src="gallery/car4.jpg" alt="ford car">
-            <img src="gallery/car5.jpg" alt="ford car">
-            <img src="gallery/car6.jpg" alt="ford car">
-            <img src="gallery/car7.jpg" alt="ford car">
-            <img src="gallery/car8.jpg" alt="ford car">
-            <img src="gallery/car9.jpg" alt="ford car">
-       
+    <main  >
+        <figure class="flex-container">
+            <img class="thumbnail" src="gallery/car1.jpg" alt="Ford Raptor">
+            <img class="thumbnail" src="gallery/car2.jpg" alt="Ford Raptor Ranger">
+            <img class="thumbnail" src="gallery/car3.jpg" alt="Ford Raptor">
+            <img class="thumbnail" src="gallery/car4.jpg" alt="Ford Raptor">
+            <img class="thumbnail" src="gallery/car5.jpg" alt="Ford Raptor">
+            <img class="thumbnail" src="gallery/car6.jpg" alt="Ford Bronco Raptor">
+            <img class="thumbnail" src="gallery/car7.jpg" alt="Ford Raptor">
+            <img class="thumbnail" src="gallery/car8.jpg" alt="Ford Bronco Raptor">
+            <img class="thumbnail" src="gallery/car9.jpg" alt="Ford Raptor">
+        </figure> 
+         <!-- The Modal -->
+         <div id="myModal" class="modal">
+            <img class="modal-content" id="imgModal">
+        </div>  
     </main>
+    <script src="js/jscript.js"></script>
     <footer>
         <p class="copyright">Designed by Henman Digitals &copy2022, All rights reserved</p>
     </footer>
     
 </body>
-</html>g
+</html>

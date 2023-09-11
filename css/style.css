@@ -1,37 +1,100 @@
 body {
 	margin: 0px;
+    background-color: black;
 }
-.heading h1{
-    margin: 10px auto 5px auto;
+
+/* Header */
+.main-heading{
+    font-family: 'Handlee', cursive;
+	font-size: 2em;
+    text-align: center;
+    padding: 5px;
+    color:#ffff;
 }
+.heading {
+    margin: 20px auto;
+	width: 400px;
+    border-bottom: thick solid rgb(75, 103, 180);
+	/* -moz-box-shadow:0 5px 15px -5px rgba(0, 0, 0, 0.3);
+	-ms-box-shadow:  5px 15px -5px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+	-o-box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3); */
+	border-radius: 5px;
+    /* box-shadow: 0px 5px 10px -2px rgba(0, 0, 0, 0.3); */
+	
+}
+/* header end */
+/* Image containers */
 .flex-container {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 }
-
-.main-heading {
-	font-family: fantasy;
-	font-size: 3em;
-	border-bottom: 2px solid pink;
-	border-right: 2px solid pink;
-	width: 400px;
-	text-align: center;
-	-moz-box-shadow:4px 4px 5px #888888;
-	-ms-box-shadow: 4px 4px 5px #888888;
-	-webkit-box-shadow: 4px 4px 5px #888888;
-	-o-box-shadow: 4px 4px 5px #888888;
-	box-shadow: 4px 4px 5px #888888;
-	
-}
-
 img {
-	width: 600px;
-	height: 500px;
+	width: 400px;
+	height: auto;
 	margin: 5px;
 	transition: all 1s;
+    border-radius: 5px;
 }
-
 img:hover {
-	transform: scale(1.1);
+	transform: scale(1.04);
 }
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 99; /* Sit on top */
+    padding-top: 80px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+/* Modal Content (image) */
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(1)}
+    to {-webkit-transform:scale(2)}
+}
+ 
+@keyframes zoom {
+    from {transform:scale(0.4)}
+    to {transform:scale(1)}
+}
+@-webkit-keyframes zoom-out {
+    from {transform:scale(1)}
+    to {transform:scale(0)}
+}
+@keyframes zoom-out {
+    from {transform:scale(1)}
+    to {transform:scale(0)}
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    min-width: 50%;
+	height: 80%;
+    
+	-webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+.out {
+	animation-name: zoom-out;
+	animation-duration: 0.6s;
+  }
+/* container end */
+  /* footer */
+  footer{
+    background-color: rgb(75, 103, 180);
+  }
+  .copyright{
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    color: #ffff;
+  }
